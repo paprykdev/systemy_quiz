@@ -785,15 +785,19 @@ export default function QuizApp() {
                     alignItems: 'center',
                     justifyContent: 'center',
                     fontFamily: "'Segoe UI', sans-serif",
+                    padding: '20px 20px',
+                    paddingTop: 'max(20px, env(safe-area-inset-top))',
+                    paddingBottom: 'max(20px, env(safe-area-inset-bottom))',
                 }}
             >
                 <div
                     style={{
                         background: 'rgba(255,255,255,0.05)',
                         borderRadius: 24,
-                        padding: '48px 40px',
+                        padding:
+                            'clamp(28px, 5vw, 48px) clamp(20px, 4vw, 40px)',
                         maxWidth: 520,
-                        width: '90%',
+                        width: '100%',
                         textAlign: 'center',
                         border: '1px solid rgba(255,255,255,0.1)',
                         boxShadow: '0 20px 60px rgba(0,0,0,0.4)',
@@ -803,7 +807,7 @@ export default function QuizApp() {
                     <h1
                         style={{
                             color: '#e2e8f0',
-                            fontSize: 28,
+                            fontSize: 'clamp(22px, 5vw, 28px)',
                             fontWeight: 700,
                             margin: '0 0 8px',
                         }}
@@ -975,7 +979,9 @@ export default function QuizApp() {
                     background:
                         'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)',
                     fontFamily: "'Segoe UI', sans-serif",
-                    padding: 20,
+                    padding: '12px 20px',
+                    paddingTop: 'max(12px, env(safe-area-inset-top))',
+                    paddingBottom: 'max(12px, env(safe-area-inset-bottom))',
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'center',
@@ -1083,7 +1089,8 @@ export default function QuizApp() {
                             style={{
                                 background: 'rgba(255,255,255,0.05)',
                                 borderRadius: 16,
-                                padding: '20px 24px',
+                                padding:
+                                    'clamp(14px, 3vw, 20px) clamp(12px, 3vw, 24px)',
                                 border: '1px solid rgba(255,255,255,0.1)',
                                 boxShadow: '0 4px 20px rgba(0,0,0,0.2)',
                                 position: 'relative',
@@ -1204,14 +1211,17 @@ export default function QuizApp() {
                     alignItems: 'center',
                     justifyContent: 'center',
                     fontFamily: "'Segoe UI', sans-serif",
-                    padding: 20,
+                    padding: '20px 20px',
+                    paddingTop: 'max(20px, env(safe-area-inset-top))',
+                    paddingBottom: 'max(20px, env(safe-area-inset-bottom))',
                 }}
             >
                 <div
                     style={{
                         background: 'rgba(255,255,255,0.05)',
                         borderRadius: 24,
-                        padding: '48px 40px',
+                        padding:
+                            'clamp(28px, 5vw, 48px) clamp(20px, 4vw, 40px)',
                         maxWidth: 560,
                         width: '100%',
                         textAlign: 'center',
@@ -1265,8 +1275,9 @@ export default function QuizApp() {
                     <div
                         style={{
                             display: 'grid',
-                            gridTemplateColumns: '1fr 1fr',
-                            gap: 12,
+                            gridTemplateColumns:
+                                'repeat(auto-fill, minmax(120px, 1fr))',
+                            gap: 10,
                             marginBottom: 28,
                         }}
                     >
@@ -1309,6 +1320,7 @@ export default function QuizApp() {
                             display: 'flex',
                             gap: 12,
                             justifyContent: 'center',
+                            flexWrap: 'wrap',
                         }}
                     >
                         <button
@@ -1318,10 +1330,11 @@ export default function QuizApp() {
                                 color: '#e2e8f0',
                                 border: '1px solid rgba(255,255,255,0.15)',
                                 borderRadius: 12,
-                                padding: '12px 24px',
-                                fontSize: 15,
+                                padding: '12px 20px',
+                                fontSize: 14,
                                 fontWeight: 600,
                                 cursor: 'pointer',
+                                minHeight: 44,
                             }}
                         >
                             ← Menu
@@ -1338,10 +1351,11 @@ export default function QuizApp() {
                                 color: '#e2e8f0',
                                 border: '1px solid rgba(255,255,255,0.15)',
                                 borderRadius: 12,
-                                padding: '12px 24px',
-                                fontSize: 15,
+                                padding: '12px 20px',
+                                fontSize: 14,
                                 fontWeight: 600,
                                 cursor: 'pointer',
+                                minHeight: 44,
                             }}
                         >
                             🔍 Sprawdź błędy
@@ -1354,10 +1368,11 @@ export default function QuizApp() {
                                 color: '#fff',
                                 border: 'none',
                                 borderRadius: 12,
-                                padding: '12px 24px',
-                                fontSize: 15,
+                                padding: '12px 20px',
+                                fontSize: 14,
                                 fontWeight: 600,
                                 cursor: 'pointer',
+                                minHeight: 44,
                             }}
                         >
                             🔄 Jeszcze raz
@@ -1381,7 +1396,9 @@ export default function QuizApp() {
                 background:
                     'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)',
                 fontFamily: "'Segoe UI', sans-serif",
-                padding: 20,
+                padding: '12px 20px',
+                paddingTop: 'max(12px, env(safe-area-inset-top))',
+                paddingBottom: 'max(12px, env(safe-area-inset-bottom))',
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
@@ -1457,7 +1474,7 @@ export default function QuizApp() {
                 style={{
                     background: 'rgba(255,255,255,0.05)',
                     borderRadius: 20,
-                    padding: '28px 32px',
+                    padding: 'clamp(16px, 3vw, 28px) clamp(14px, 3vw, 32px)',
                     maxWidth: 700,
                     width: '100%',
                     border: '1px solid rgba(255,255,255,0.1)',
@@ -1735,9 +1752,10 @@ export default function QuizApp() {
                 <div
                     style={{
                         display: 'flex',
-                        gap: 12,
+                        gap: 8,
                         marginTop: 24,
                         justifyContent: 'space-between',
+                        flexWrap: 'wrap',
                     }}
                 >
                     <button
@@ -1748,9 +1766,10 @@ export default function QuizApp() {
                             color: currentQ === 0 ? '#475569' : '#94a3b8',
                             border: '1px solid rgba(255,255,255,0.08)',
                             borderRadius: 10,
-                            padding: '10px 20px',
+                            padding: '10px 16px',
                             fontSize: 14,
                             cursor: currentQ === 0 ? 'not-allowed' : 'pointer',
+                            minHeight: 44,
                         }}
                     >
                         ← Poprzednie
@@ -1768,13 +1787,14 @@ export default function QuizApp() {
                                 color: '#fff',
                                 border: 'none',
                                 borderRadius: 10,
-                                padding: '10px 28px',
+                                padding: '10px 20px',
                                 fontSize: 14,
                                 fontWeight: 600,
                                 cursor:
                                     selected.length === 0
                                         ? 'not-allowed'
                                         : 'pointer',
+                                minHeight: 44,
                             }}
                         >
                             Sprawdź
@@ -1789,10 +1809,11 @@ export default function QuizApp() {
                             color: '#fff',
                             border: 'none',
                             borderRadius: 10,
-                            padding: '10px 24px',
+                            padding: '10px 16px',
                             fontSize: 14,
                             fontWeight: 600,
                             cursor: 'pointer',
+                            minHeight: 44,
                         }}
                     >
                         {currentQ === shuffled.length - 1
